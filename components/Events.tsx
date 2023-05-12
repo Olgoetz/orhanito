@@ -47,6 +47,7 @@ const Events = () => {
             {data.map((el) => {
               return (
                 <Event
+                  key={el.id}
                   id={el.id}
                   title={el.title}
                   task={el.task}

@@ -11,7 +11,7 @@ function Navbar() {
 
   function renderLinks(styles: string, val: boolean) {
     return links.map((el) => (
-      <li className={styles} onClick={() => handleNav(val)}>
+      <li key={el} className={styles} onClick={() => handleNav(val)}>
         <Link href={`/#${el}`}>{el}</Link>
       </li>
     ));
