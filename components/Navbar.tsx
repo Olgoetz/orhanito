@@ -47,7 +47,7 @@ function Navbar() {
 
         {nav && (
           <div className="absolute top-0 left-0 bg-black w-full">
-            <ul className="flex flex-col text-xl justify-center gap-6 items-center h-screen px-2">
+            <ul className="flex flex-col text-4xl justify-center gap-y-8 items-center h-screen">
               {renderLinks("uppercase", false)}
             </ul>
           </div>
