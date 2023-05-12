@@ -26,7 +26,7 @@ const Bookings = () => {
     <>
       <div id="bookings" className="px-2 py-[80px] bg-black">
         <div className="mt-10 max-w-[1200px] mx-auto">
-          <h2 className="text-red-300 text-center uppercase font-bold text-3xl md:text-5xl">
+          <h2 className="text-red-400 text-center uppercase font-bold text-3xl md:text-5xl">
             Bookings
           </h2>
           <h3 className="text-gray-500 text-center text-lg md:text-2xl">

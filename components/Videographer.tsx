@@ -5,7 +5,7 @@ const Dj = () => {
     <>
       <div id="videographer" className="px-2 py-[80px] bg-black">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-red-300 text-right uppercase font-bold text-3xl md:text-5xl">
+          <h2 className="text-red-400 text-right uppercase font-bold text-3xl md:text-5xl">
             Videographer
           </h2>
           <h3 className="text-gray-500 text-right text-lg md:text-2xl">
@@ -15,8 +15,8 @@ const Dj = () => {
           <div className="mt-5 grid md:grid-cols-2 gap-10">
             <div className="mx-auto">
               <Image
-                src="/Videographer.jpg"
-                alt="Videographer"
+                src="/videographer.jpg"
+                alt="videographer"
                 width={600}
                 height={600}
               />

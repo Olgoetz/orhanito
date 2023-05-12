@@ -36,7 +36,7 @@ const Events = () => {
   return (
     <>
       <div id="events" className="py-[80px] px-2 max-w-[1200px] mx-auto">
-        <h2 className="text-red-300 uppercase text-center font-bold text-3xl md:text-5xl">
+        <h2 className="text-red-400 uppercase text-center font-bold text-3xl md:text-5xl">
           Events
         </h2>
         <h3 className="text-gray-500 text-lg text-center md:text-2xl">

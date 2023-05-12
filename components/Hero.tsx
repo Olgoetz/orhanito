@@ -7,7 +7,7 @@ function Hero() {
       <div className="bg-black/30 absolute left-0 top-0 w-full h-full z-10" />
 
       <Image
-        alt="Dj"
+        alt="bg"
         src="/bg.jpg"
         //  placeholder="blur"
         quality={100}

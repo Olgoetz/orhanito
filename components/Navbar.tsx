@@ -21,14 +21,15 @@ function Navbar() {
     <>
       <div className="fixed z-50 flex w-full justify-between items-center bg-black text-white h-[80px] p-3">
         <Link href="/">
-          <Image
+          {/* <Image
             alt="Logo"
             src="/logo.png"
             quality={100}
             className="cursor-pointer"
             width={280}
             height={200}
-          />
+          /> */}
+          <p className="text-5xl text-red-400 font-bold">DJ Orhanito</p>
         </Link>
 
         <div>
