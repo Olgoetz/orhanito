@@ -17,7 +17,7 @@ function Event({ id, title, venue, date, task, url, image }: EventProps) {
   return (
     <li
       key={id}
-      className="flex md:h-[250px] w-[400px] md:w-[600px] gap-3 items-center shadow-xl round-lg p-3 my-3"
+      className="flex md:h-[250px] max-w-[400px] md:w-[800px] md:max-w-[800px] gap-3 items-center shadow-xl round-lg p-3 my-3"
     >
       <div className="w-full">
         <Image

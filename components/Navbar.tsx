@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const links = ["dj", "videographer", "events", "bookings"];
-import Image from "next/image";
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
 
@@ -47,7 +46,7 @@ function Navbar() {
 
         {nav && (
           <div className="absolute top-0 left-0 bg-black w-full">
-            <ul className="flex flex-col text-4xl justify-center gap-y-8 items-center h-screen">
+            <ul className="flex flex-col text-4xl justify-center gap-y-8 mb-5 items-center h-screen">
               {renderLinks("uppercase", false)}
             </ul>
           </div>

@@ -35,7 +35,7 @@ const data = [
 const Events = () => {
   return (
     <>
-      <div id="events" className="py-[80px] px-2 max-w-[1200px] mx-auto">
+      <div id="events" className="py-[80px] container mx-auto px-2">
         <h2 className="text-red-400 uppercase text-center font-bold text-3xl md:text-5xl">
           Events
         </h2>
