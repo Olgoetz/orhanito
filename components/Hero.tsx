@@ -4,8 +4,6 @@ import Image from "next/image";
 function Hero() {
   return (
     <div>
-      <div className="bg-black/30 absolute left-0 top-0 w-full h-screen z-10" />
-
       <Image
         alt="dj_orhanito-hero"
         src="/action_hero.webp"
@@ -17,6 +15,7 @@ function Hero() {
           objectFit: "cover",
         }}
       />
+      <div className="bg-black/30 absolute left-0 top-0 w-full h-full z-10" />
 
       <div className="w-full relative z-20">
         <div className="flex flex-col justify-center h-screen text-center text-white w-full max-w-[800px] mx-auto">
