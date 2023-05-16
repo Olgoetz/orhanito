@@ -1,5 +1,6 @@
 import Event from "./Event";
-
+import { contentfulClient } from "@/utils/contentful";
+import { Event as EventType } from "@/utils/contentful";
 const data = [
   {
     id: "1",
@@ -32,7 +33,18 @@ const data = [
     url: "Some Link",
   },
 ];
-const Events = () => {
+
+async function getEvents() {
+  const res = await contentfulClient.getEntries<EventType>({
+    content_type: "event",
+  });
+
+  return res.items;
+}
+
+const Events = async () => {
+  const d = await getEvents();
+
   return (
     <>
       <div id="events" className="py-[80px] container mx-auto px-2">
@@ -42,19 +54,44 @@ const Events = () => {
         <h3 className="text-gray-500 text-lg text-center md:text-2xl">
           Meine bevorstehenden Events
         </h3>
-        <div className="mt-10 flex flex-col justify-center items-center">
+        <div className="mt-10 flex justify-center items-center">
           <ul>
-            {data.map((el) => {
+            {d.map((el) => {
+              const id = el.sys.id;
+              const { title, date, address } = el.fields;
+
+              const img = el.fields.img;
+              console.log(img);
+              // Create a new Date object from the UTC string
+              const utcDate = new Date(date as string);
+
+              // Get the local date and time in the desired format
+              const options: object = {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+              };
+
+              const localDateTime =
+                utcDate.toLocaleString("de-De", options) + " Uhr";
+
+              //    console.log("https:" + img.fields.file.url);
               return (
                 <Event
-                  key={el.id}
-                  id={el.id}
-                  title={el.title}
-                  task={el.task}
-                  date={el.date}
-                  venue={el.venue}
-                  url={el.url}
-                  image={el.image}
+                  key={id}
+                  id={id}
+                  title={title as string}
+                  address={address as string}
+                  date={localDateTime}
+                  image={
+                    "https:" +
+                    "//images.ctfassets.net/rxd0koxfgufn/1cvpoEbT9YA2QRlgsosuU1/57de6feb0b203d730fb780f71f1b910b/tanzraum_rgb.png"
+                  }
+                  // venue={el.venue}
+                  // url={el.url}
+                  // image={el.image}
                 />
               );
             })}

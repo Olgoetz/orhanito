@@ -4,7 +4,7 @@ import { BiCopyright } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
-
+import Image from "next/image";
 function Footer() {
   const [currentDate, setCurrentDate] = useState<number>();
 
@@ -14,7 +14,7 @@ function Footer() {
     setCurrentDate(year);
   }, []);
   return (
-    <div className="bg-gray-300">
+    <div className="bg-white">
       <div className="py-10 container mx-auto px-2">
         <div className="grid md:grid-cols-3 gap-y-5 items-center text-center">
           <div>
@@ -43,7 +43,15 @@ function Footer() {
             <p>Impressum</p>
           </div>
         </div>
-        <div className="flex mt-10 justify-center">
+
+        <Image
+          className="mx-auto mt-3"
+          src="/logo_black.webp"
+          alt="dj_orhanito-logo-black"
+          width={100}
+          height={100}
+        />
+        <div className="flex mt-3 justify-center">
           <BiCopyright size={20} className="mr-1" />
           <p>{currentDate} Orhan K.</p>
         </div>

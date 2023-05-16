@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-const links = ["dj", "videographer", "events", "bookings"];
+const links = ["dj", "about me", "events", "bookings"];
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
 
@@ -19,16 +20,15 @@ function Navbar() {
   return (
     <>
       <div className="fixed z-50 flex w-full justify-between items-center bg-black text-white h-[80px] p-3">
-        <Link href="/">
-          {/* <Image
+        <Link href="/" className="items-center ml-2">
+          <Image
             alt="Logo"
-            src="/logo.png"
+            src="/logo_white.png"
             quality={100}
             className="cursor-pointer"
-            width={280}
-            height={200}
-          /> */}
-          <p className="text-5xl text-red-400 font-bold">DJ Orhanito</p>
+            width={120}
+            height={100}
+          />
         </Link>
 
         <div>
