@@ -12,7 +12,7 @@ function Navbar() {
   function renderLinks(styles: string, val: boolean) {
     return links.map((el) => (
       <li key={el} className={styles} onClick={() => handleNav(val)}>
-        <Link href={`/#${el}`}>{el}</Link>
+        <Link href={`/#${el.split(" ").join("")}`}>{el}</Link>
       </li>
     ));
   }
@@ -20,12 +20,12 @@ function Navbar() {
   return (
     <>
       <div className="fixed z-50 flex w-full justify-between items-center bg-black text-white h-[80px] p-3">
-        <Link href="/" className="items-center ml-2">
+        <Link href="/#top" scroll={true}>
           <Image
             alt="Logo"
             src="/logo_white.png"
             quality={100}
-            className="cursor-pointer"
+            className="cursor-pointer items-center ml-2"
             width={120}
             height={100}
           />

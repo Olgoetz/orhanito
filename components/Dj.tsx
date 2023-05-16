@@ -3,7 +3,7 @@ import Image from "next/image";
 const Dj = () => {
   return (
     <>
-      <div id="dj" className="py-[80px] container mx-auto px-2">
+      <div id="dj" className="py-20 container mx-auto px-2">
         <h2 className="text-red-400 uppercase font-bold text-3xl md:text-5xl">
           Dj
         </h2>

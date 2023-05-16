@@ -4,7 +4,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <div>
-      <div className="bg-black/30 absolute left-0 top-0 w-full h-full z-10" />
+      <div className="bg-black/30 absolute left-0 top-0 w-full h-screen z-10" />
 
       <Image
         alt="dj_orhanito-hero"

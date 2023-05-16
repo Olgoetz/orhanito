@@ -5,6 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
 import Image from "next/image";
+import Link from "next/link";
 function Footer() {
   const [currentDate, setCurrentDate] = useState<number>();
 
@@ -43,14 +44,15 @@ function Footer() {
             <p>Impressum</p>
           </div>
         </div>
-
-        <Image
-          className="mx-auto mt-3"
-          src="/logo_black.webp"
-          alt="dj_orhanito-logo-black"
-          width={100}
-          height={100}
-        />
+        <Link href="/#top" scroll={true}>
+          <Image
+            className="mx-auto mt-3"
+            src="/logo_black.webp"
+            alt="dj_orhanito-logo-black"
+            width={100}
+            height={100}
+          />
+        </Link>
         <div className="flex mt-3 justify-center">
           <BiCopyright size={20} className="mr-1" />
           <p>{currentDate} Orhan K.</p>
