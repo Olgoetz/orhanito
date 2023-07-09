@@ -105,7 +105,7 @@ const Page = () => {
               Profiling means any form of automated processing of personal data
               consisting of the use of personal data to evaluate certain
               personal aspects relating to a natural person, in particular to
-              analyse or predict aspects concerning that natural person's
+              analyse or predict aspects concerning that natural person&apos;s
               performance at work, economic situation, health, personal
               preferences, interests, reliability, behaviour, location or
               movements.{" "}
@@ -171,10 +171,10 @@ const Page = () => {
             <h4 className="font-bold my-4">k)    Consent</h4>
             <p>
               Consent of the data subject is any freely given, specific,
-              informed and unambiguous indication of the data subject's wishes
-              by which he or she, by a statement or by a clear affirmative
-              action, signifies agreement to the processing of personal data
-              relating to him or her.{" "}
+              informed and unambiguous indication of the data subject&apos;s
+              wishes by which he or she, by a statement or by a clear
+              affirmative action, signifies agreement to the processing of
+              personal data relating to him or her.{" "}
             </p>
           </li>
         </ul>
@@ -547,20 +547,20 @@ const Page = () => {
               entering into, or the performance of, a contract between the data
               subject and a data controller, or (2) is not authorised by Union
               or Member State law to which the controller is subject and which
-              also lays down suitable measures to safeguard the data subject's
-              rights and freedoms and legitimate interests, or (3) is not based
-              on the data subject's explicit consent.
+              also lays down suitable measures to safeguard the data
+              subject&apos;s rights and freedoms and legitimate interests, or
+              (3) is not based on the data subject&apos;s explicit consent.
             </p>
 
             <p>
               If the decision (1) is necessary for entering into, or the
               performance of, a contract between the data subject and a data
-              controller, or (2) it is based on the data subject's explicit
+              controller, or (2) it is based on the data subject&apos;s explicit
               consent, this website shall implement suitable measures to
-              safeguard the data subject's rights and freedoms and legitimate
-              interests, at least the right to obtain human intervention on the
-              part of the controller, to express his or her point of view and
-              contest the decision.
+              safeguard the data subject&apos;s rights and freedoms and
+              legitimate interests, at least the right to obtain human
+              intervention on the part of the controller, to express his or her
+              point of view and contest the decision.
             </p>
 
             <p>

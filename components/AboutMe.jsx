@@ -22,8 +22,8 @@ const Dj = () => {
           </div>
           <div className="text-justify text-white">
             <p>
-              When I'm not DJing or dancing, I work as an IT network engineer at
-              Deutsche Bahn.
+              When I am not DJing or dancing, I work as an IT network engineer
+              at Deutsche Bahn.
             </p>
             <p>
               I have a passion for technology and enjoy exploring the

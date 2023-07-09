@@ -18,7 +18,7 @@ const Dj = () => {
               dancer. With his motto
               <span className="text-red-300">
                 {" "}
-                "From a Dancer, for Dancers"{" "}
+                &quot;From a Dancer, for Dancers&quot;{" "}
               </span>
               he brings a unique perspective to his music.
             </p>
