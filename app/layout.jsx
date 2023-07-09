@@ -4,8 +4,8 @@ import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Orhan - Dein DJ für Dein Event",
-  description: "DJ bin ich aus Leidenschaft.",
+  title: "DJ Orhanito - Your Bachata DJ",
+  description: "Passionate Bachata DJ and Dancer",
 };
 
 export default function RootLayout({ children }) {
