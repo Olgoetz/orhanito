@@ -33,7 +33,9 @@ function Hero() {
             repeatDelay: 1,
           }}
         >
-          <h1 className="text-6xl  font-bold text-red-300">I'm DJ Orhanito </h1>
+          <h1 className="text-6xl  font-bold text-red-300">
+            I&apos;m DJ Orhanito{" "}
+          </h1>
           <p className="mt-10 text-2xl font-bold">
             <ImHeadphones size={30} className="text-white inline-block mr-2" />{" "}
             Passionate Bachata DJ

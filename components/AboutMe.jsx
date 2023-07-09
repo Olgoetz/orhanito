@@ -22,8 +22,8 @@ const Dj = () => {
           </div>
           <div className="text-justify text-white">
             <p>
-              When I am not DJing or dancing, I work as an IT network engineer
-              at Deutsche Bahn.
+              When I&apos;m not DJing or dancing, I work as an IT network
+              engineer at Deutsche Bahn.
             </p>
             <p>
               I have a passion for technology and enjoy exploring the
@@ -34,8 +34,8 @@ const Dj = () => {
             </p>
             <p>
               When I need some downtime, I indulge in gaming, immersing myself
-              in virtual worlds and challenging my skills. It's a perfect way to
-              unwind and recharge my creative energy.
+              in virtual worlds and challenging my skills. It&apos;s a perfect
+              way to unwind and recharge my creative energy.
             </p>
           </div>
         </div>
