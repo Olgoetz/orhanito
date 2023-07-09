@@ -1,4 +1,4 @@
-import { WebURL } from "@/utils/contstants";
+import { WebURL } from "../utils/contstants";
 export default function sitemap() {
   return [
     {
