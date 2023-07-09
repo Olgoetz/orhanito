@@ -5,11 +5,11 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const links = ["dj", "about me", "events", "bookings"];
 function Navbar() {
-  const [nav, setNav] = useState<boolean>(false);
+  const [nav, setNav] = useState(false);
 
-  const handleNav = (val: boolean) => setNav(val);
+  const handleNav = (val) => setNav(val);
 
-  function renderLinks(styles: string, val: boolean) {
+  function renderLinks(styles, val) {
     return links.map((el) => (
       <li key={el} className={styles} onClick={() => handleNav(val)}>
         <Link href={`/#${el.split(" ").join("")}`}>{el}</Link>

@@ -12,25 +12,23 @@ const validationSchema = z.object({
     .email({ message: "Bitte eine gültige Email Adresse eingeben" }),
 });
 
-type ValidationSchema = z.infer<typeof validationSchema>;
-
 const Bookings = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ValidationSchema>({
+  } = useForm({
     resolver: zodResolver(validationSchema),
   });
 
   return (
     <div className="bg-black">
       <div id="bookings" className="px-2 py-[80px] container mx-auto bg-black">
-        <h2 className="text-red-400 text-center uppercase font-bold text-3xl md:text-5xl">
+        <h2 className="text-red-500 text-center uppercase font-bold text-3xl md:text-5xl">
           Bookings
         </h2>
         <h3 className="text-gray-500 text-center text-lg md:text-2xl">
-          Anfragen über das Formular
+          Shoot me a message
         </h3>
 
         <div className="grid md:grid-cols-2 gap-x-2 mt-5">
@@ -50,7 +48,7 @@ const Bookings = () => {
               onSubmit={handleSubmit((d) => console.log(d))}
             >
               <label htmlFor="email" className="uppercase font-bold text-white">
-                Deine Email-Adresse
+                Your Email-Address
               </label>
               <input
                 type="string"
@@ -64,7 +62,7 @@ const Bookings = () => {
                 htmlFor="message"
                 className="mt-2 uppercase font-bold text-white"
               >
-                Nachricht
+                Message
               </label>
               <textarea
                 maxLength={500}
@@ -80,7 +78,7 @@ const Bookings = () => {
                 className="bg-red-300 mx-auto justify-content w-full h-14 text-black text-sm font-bold rounded-md px-3 py-1 mt-1"
                 type="submit"
               >
-                Abschicken
+                Send
               </button>
             </form>
           </div>

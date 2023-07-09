@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { ImHeadphones } from "react-icons/im";
 import Image from "next/image";
 function Hero() {
   return (
@@ -32,13 +33,14 @@ function Hero() {
             repeatDelay: 1,
           }}
         >
-          <h1 className="text-6xl  font-bold text-red-300">
-            Hi, ich bin Orhan
-          </h1>
-          <p className="mt-10 text-2xl font-bold">Dein DJ für Dein Event</p>
+          <h1 className="text-6xl  font-bold text-red-300">I'm DJ Orhanito </h1>
+          <p className="mt-10 text-2xl font-bold">
+            <ImHeadphones size={30} className="text-white inline-block mr-2" />{" "}
+            Passionate Bachata DJ
+          </p>
         </motion.div>
         <button className="bg-red-300 text-black p-3 rounded-md w-[300px] mt-10 mx-auto">
-          <a href="#bookings">Anfrage</a>
+          <a href="#bookings">Book Me!</a>
         </button>
       </div>
     </div>

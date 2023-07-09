@@ -1,19 +1,9 @@
 import { MdDateRange } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
-import { BsCameraVideoFill } from "react-icons/bs";
 import { FaMusic } from "react-icons/fa";
 import Image from "next/image";
 
-type EventProps = {
-  id: string;
-  title: string;
-  date: string;
-
-  // url: string;
-  image: string;
-  address: string;
-};
-function Event({ id, title, image, address, date }: EventProps) {
+function Event({ id, title, image, address, date }) {
   return (
     <li
       key={id}
@@ -51,7 +41,7 @@ function Event({ id, title, image, address, date }: EventProps) {
         </div> */}
         <button className="bg-red-300 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-1 mt-1">
           <a href={""} target="_blank" rel="noreferrer">
-            Veranstaltungsseite
+            Event Page
           </a>
         </button>
       </div>
