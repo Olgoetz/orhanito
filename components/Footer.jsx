@@ -48,7 +48,9 @@ function Footer() {
             <Link href="/dataprivacy">
               <p>Data Privacy</p>
             </Link>
-            <p>Impressum</p>
+            <Link href="/impressum">
+              <p>Impressum</p>
+            </Link>
           </div>
         </div>
         <Link href="/#top" scroll={true}>

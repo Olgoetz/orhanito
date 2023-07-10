@@ -2,17 +2,23 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useFormspark } from "@formspark/use-formspark";
 import * as z from "zod";
+import { useState } from "react";
 
 const validationSchema = z.object({
-  email: z.string().min(1, { message: "Required" }),
-  text: z
+  email: z
     .string()
     .min(1, { message: "Required" })
-    .email({ message: "Bitte eine gültige Email Adresse eingeben" }),
+    .email({ message: "Please enter a valid email address!" }),
+  text: z.string().min(1, { message: "Required" }),
 });
 
 const Bookings = () => {
+  const [submit, submitting] = useFormspark({
+    formId: "MGnTBrsD",
+  });
+
   const {
     register,
     handleSubmit,
@@ -21,6 +27,27 @@ const Bookings = () => {
     resolver: zodResolver(validationSchema),
   });
 
+  const [hasSent, setHasSent] = useState("");
+  const buildMessage = (styles, message) => {
+    return <p className={styles}>{message}</p>;
+  };
+  const onSubmit = async (data) => {
+    try {
+      console.log(data);
+      await submit(data);
+      setHasSent({
+        style: "text-green-300",
+        message: "Message successfully sent!",
+      });
+    } catch (error) {
+      console.error(error);
+      setHasSent({
+        style: "text-red-300",
+        message: "Failed to send message. Please try again!",
+      });
+    }
+    setTimeout(() => setHasSent(""), 5000);
+  };
   return (
     <div className="bg-black">
       <div id="bookings" className="px-2 py-[80px] container mx-auto bg-black">
@@ -45,8 +72,13 @@ const Bookings = () => {
           <div>
             <form
               className="max-w-[500px] flex mx-auto flex-col gap-3 flex-wrap"
-              onSubmit={handleSubmit((d) => console.log(d))}
+              onSubmit={handleSubmit(onSubmit)}
             >
+              <input
+                type="hidden"
+                name="_email.subject"
+                value="You have a new booking inquiry!"
+              />
               <label htmlFor="email" className="uppercase font-bold text-white">
                 Your Email-Address
               </label>
@@ -77,9 +109,13 @@ const Bookings = () => {
               <button
                 className="bg-red-300 mx-auto justify-content w-full h-14 text-black text-sm font-bold rounded-md px-3 py-1 mt-1"
                 type="submit"
+                disabled={submitting}
               >
                 Send
               </button>
+              {hasSent !== ""
+                ? buildMessage(hasSent.style, hasSent.message)
+                : ""}
             </form>
           </div>
         </div>

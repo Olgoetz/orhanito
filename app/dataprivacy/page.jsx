@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../../components/Navbar";
 
 const Page = () => {
@@ -6,9 +5,9 @@ const Page = () => {
     <>
       <Navbar />
       <div className="py-[80px] text-justify container mx-auto px-2">
-        <h2 className="text-red-400 text-left uppercase my-4 font-bold text-3xl md:text-5xl">
+        <h1 className="text-red-400 text-left uppercase my-4 font-bold text-3xl md:text-5xl">
           Dataprivacy
-        </h2>
+        </h1>
 
         <p>
           We are very delighted that you have shown interest in my duties. Data
