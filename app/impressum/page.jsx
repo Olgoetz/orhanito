@@ -4,7 +4,10 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <div className="py-[80px] text-justify container mx-auto px-2">
+      <div
+        id="impressum"
+        className="py-[80px] text-justify container mx-auto px-2"
+      >
         <h1 className="text-red-400 text-left uppercase my-4 font-bold text-3xl md:text-5xl">
           Impressum
         </h1>

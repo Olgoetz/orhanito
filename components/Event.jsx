@@ -3,7 +3,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { FaMusic } from "react-icons/fa";
 import Image from "next/image";
 
-function Event({ id, title, image, address, date }) {
+function Event({ id, title, image, address, date, link }) {
   return (
     <li
       key={id}
@@ -40,8 +40,8 @@ function Event({ id, title, image, address, date }) {
           <address className="text-sm">{venue}</address>
         </div> */}
         <button className="bg-red-300 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-1 mt-1">
-          <a href={""} target="_blank" rel="noreferrer">
-            Event Page
+          <a href={link} rel="noreferrer">
+            Event
           </a>
         </button>
       </div>

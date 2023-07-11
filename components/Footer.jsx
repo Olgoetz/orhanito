@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { BiCopyright } from "react-icons/bi";
-import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import Image from "next/image";
@@ -25,10 +24,6 @@ function Footer() {
                 <HiOutlineMail className="mr-3" size={30} />
                 <p>bookings@djorhanito.com</p>
               </div>
-              <div className="flex justify-center items-center">
-                <BsWhatsapp className="mr-3" size={30} />
-                <p>+49 160 1824227</p>
-              </div>
             </div>
           </div>
           <div>
@@ -45,10 +40,10 @@ function Footer() {
           </div>
           <div>
             <h3 className="uppercase font-bold mb-2">Miscellaneous</h3>
-            <Link href="/dataprivacy">
+            <Link href="/dataprivacy#dataprivacy" scroll={true}>
               <p>Data Privacy</p>
             </Link>
-            <Link href="/impressum">
+            <Link href="/impressum#impressum" scroll={true}>
               <p>Impressum</p>
             </Link>
           </div>

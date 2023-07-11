@@ -5,7 +5,7 @@ import React from "react";
 
 const Events = async () => {
   const events = await getEvents();
-
+  events.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
   return (
     <>
       <div id="events" className="py-[80px] container mx-auto px-2">
@@ -18,25 +18,22 @@ const Events = async () => {
         <div className="mt-10 flex justify-center items-center">
           <ul>
             {events.map((el) => {
+              console.log("Showing event: ", el.fields.title);
+              console.log(el);
               const id = el.sys.id;
-              const { title, date, address } = el.fields;
+              const { title, date, address, eventLink } = el.fields;
 
               const img = "https:" + el.fields.img.fields.file.url;
 
-              // Create a new Date object from the UTC string
-              const utcDate = new Date();
+              const _date = new Date(date);
 
-              // Get the local date and time in the desired format
-              const options = {
-                year: "numeric",
-                month: "2-digit",
+              const formattedDate = _date.toLocaleString("en-GB", {
                 day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
                 hour: "2-digit",
                 minute: "2-digit",
-              };
-
-              const localDateTime =
-                utcDate.toLocaleString("de-De", options) + " Uhr";
+              });
 
               //    console.log("https:" + img.fields.file.url);
               return (
@@ -45,8 +42,9 @@ const Events = async () => {
                   id={id}
                   title={title}
                   address={address}
-                  date={localDateTime}
+                  date={formattedDate}
                   image={img}
+                  link={eventLink}
                 />
               );
             })}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useFormspark } from "@formspark/use-formspark";
+import { ClockLoader } from "react-spinners";
 import * as z from "zod";
 import { useState } from "react";
 
@@ -15,10 +16,11 @@ const validationSchema = z.object({
 });
 
 const Bookings = () => {
-  const [submit, submitting] = useFormspark({
-    formId: "MGnTBrsD",
-  });
+  const [isLoading, setIsLoading] = useState(false);
 
+  const [submit, submitting] = useFormspark({
+    formId: process.env.NEXT_PUBLIC_FORMSPARK_FORM_ID,
+  });
   const {
     register,
     handleSubmit,
@@ -32,9 +34,22 @@ const Bookings = () => {
     return <p className={styles}>{message}</p>;
   };
   const onSubmit = async (data) => {
+    const payload = {
+      email: data.email,
+      text: data.text,
+      _email: {
+        subject: "You have a new booking inquiry!",
+        from: "djorhanito.com",
+        template: {
+          title: false,
+          footer: false,
+        },
+      },
+    };
     try {
-      console.log(data);
-      await submit(data);
+      console.log(payload);
+      setIsLoading(true);
+      await submit(payload);
       setHasSent({
         style: "text-green-300",
         message: "Message successfully sent!",
@@ -46,6 +61,7 @@ const Bookings = () => {
         message: "Failed to send message. Please try again!",
       });
     }
+    setIsLoading(false);
     setTimeout(() => setHasSent(""), 5000);
   };
   return (
@@ -74,11 +90,6 @@ const Bookings = () => {
               className="max-w-[500px] flex mx-auto flex-col gap-3 flex-wrap"
               onSubmit={handleSubmit(onSubmit)}
             >
-              <input
-                type="hidden"
-                name="_email.subject"
-                value="You have a new booking inquiry!"
-              />
               <label htmlFor="email" className="uppercase font-bold text-white">
                 Your Email-Address
               </label>
@@ -107,12 +118,17 @@ const Bookings = () => {
               )}
 
               <button
-                className="bg-red-300 mx-auto justify-content w-full h-14 text-black text-sm font-bold rounded-md px-3 py-1 mt-1"
+                className="bg-red-500 mx-auto justify-content w-full h-14 text-black text-sm font-bold rounded-md px-3 py-1 mt-1"
                 type="submit"
                 disabled={submitting}
               >
                 Send
               </button>
+              {isLoading && (
+                <div className="w-full mt-1 flex flex-col items-center">
+                  <ClockLoader color="#ffffff" size={50} />
+                </div>
+              )}
               {hasSent !== ""
                 ? buildMessage(hasSent.style, hasSent.message)
                 : ""}
