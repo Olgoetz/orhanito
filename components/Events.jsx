@@ -2,7 +2,7 @@ import Event from "./Event";
 import getEvents from "../utils/api";
 
 import React from "react";
-export const revalidate = 60;
+
 const Events = async () => {
   const events = await getEvents();
   events.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));

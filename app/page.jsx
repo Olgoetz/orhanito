@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe";
 import Events from "../components/Events";
 import Bookings from "../components/Bookings";
 import Footer from "../components/Footer";
+export const revalidate = 86400;
 
 function Home() {
   return (
