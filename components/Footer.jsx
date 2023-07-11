@@ -28,13 +28,16 @@ function Footer() {
           </div>
           <div>
             <h3 className="uppercase font-bold mb-2">Social Media </h3>
-            <div className="flex flex-col items-center">
+            <div className="flex justify-center">
               <Link
                 href="https://www.instagram.com/orhanitooo/"
                 target="_blank"
                 alt="instagram"
               >
-                <AiOutlineInstagram size={30} />
+                <div className="flex items-center">
+                  <p className="text-red-500">djorhanito</p>
+                  <AiOutlineInstagram size={30} />
+                </div>
               </Link>
             </div>
           </div>

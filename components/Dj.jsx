@@ -16,7 +16,7 @@ const Dj = () => {
             <p>
               DJ Orhanito is not just a talented DJ but also a passionate
               dancer. With his motto
-              <span className="text-red-300">
+              <span className="text-red-500">
                 {" "}
                 &quot;From a Dancer, for Dancers&quot;{" "}
               </span>

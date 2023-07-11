@@ -18,14 +18,19 @@ function Hero() {
       />
 
       <div className="relative z-20 flex flex-col h-screen justify-center text-center text-white w-full max-w-[800px] mx-auto">
-        <h1 className="text-6xl  font-bold text-red-500">
-          I&apos;m DJ Orhanito{" "}
-        </h1>
+        <Image
+          alt="Logo"
+          src="/logo_white.png"
+          quality={100}
+          className="mx-auto"
+          width={250}
+          height={100}
+        />
         <p className="mt-10 text-2xl font-bold">
           <ImHeadphones size={30} className="text-white inline-block mr-2" />{" "}
           Passionate Bachata DJ
         </p>
-        <button className="bg-red-500 text-black p-3 rounded-md w-[500px] mt-10 mx-auto">
+        <button className="bg-red-500 text-black p-3 rounded-md w-full mt-10 mx-auto">
           <a href="#bookings">Book Me!</a>
         </button>
       </div>
