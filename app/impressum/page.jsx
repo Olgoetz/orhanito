@@ -16,8 +16,7 @@ const Page = () => {
           <br />
           <p>Orhan Kayan</p>
           <p>Louise-schröder-weg 4, 40789 Monheim</p>
-          <p>Tel. 0151 / 23 00 50 78</p>
-          <p>michi@bachata-and-more.de</p>
+          <p>o.kayan@gmx.net</p>
           <br />
           <p>
             <strong>Haftungsausschluss</strong>
