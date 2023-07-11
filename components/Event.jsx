@@ -22,11 +22,11 @@ function Event({ id, title, image, address, date, link }) {
       <div className="flex flex-col md:ml-4 w-full gap-2">
         <h2 className="text-lg mt-1 md:text-2xl font-bold">{title}</h2>
 
-        <div className="flex items-center justify-start md:justify-start gap-0.5">
+        {/* <div className="flex items-center justify-start md:justify-start gap-0.5">
           <FaMusic size={20} className="mr-1" />
 
           <p className="font-bold">DJ</p>
-        </div>
+        </div> */}
         <div className="flex items-center justify-start md:justify-start gap-0.5">
           <MdDateRange size={20} className="mr-1" />
           <time className="font-bold">{date}</time>
@@ -39,7 +39,7 @@ function Event({ id, title, image, address, date, link }) {
           <GrLocation size={20} className="mr-1" />
           <address className="text-sm">{venue}</address>
         </div> */}
-        <button className="bg-red-300 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-1 mt-1">
+        <button className="bg-red-500 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-2 mt-1">
           <a href={link} rel="noreferrer">
             Event
           </a>

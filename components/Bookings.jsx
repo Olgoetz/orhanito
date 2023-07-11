@@ -40,10 +40,6 @@ const Bookings = () => {
       _email: {
         subject: "You have a new booking inquiry!",
         from: "djorhanito.com",
-        template: {
-          title: false,
-          footer: false,
-        },
       },
     };
     try {
