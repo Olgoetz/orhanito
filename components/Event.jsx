@@ -39,11 +39,11 @@ function Event({ id, title, image, address, date, link }) {
           <GrLocation size={20} className="mr-1" />
           <address className="text-sm">{venue}</address>
         </div> */}
-        <button className="bg-red-500 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-2 mt-1">
-          <a href={link} rel="noreferrer">
+        <a href={link} rel="noreferrer">
+          <button className="bg-red-500 mx-auto justify-content w-full  text-black text-sm font-bold rounded-md px-3 py-2 mt-1">
             Event
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
     </li>
   );

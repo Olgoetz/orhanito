@@ -30,9 +30,11 @@ function Hero() {
           <ImHeadphones size={30} className="text-white inline-block mr-2" />{" "}
           Passionate Bachata DJ
         </p>
-        <button className="bg-red-500 text-black p-3 rounded-md w-full mt-10 mx-auto">
-          <a href="#bookings">Book Me!</a>
-        </button>
+        <a href="#bookings">
+          <button className="bg-red-500 text-black p-3 rounded-md w-full mt-10 mx-auto">
+            Book Me!
+          </button>
+        </a>
       </div>
     </div>
   );
