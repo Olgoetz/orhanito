@@ -1,1 +1,1 @@
-export const WebURL = "https//djorhanito.com"
+export const WebURL = "https://djorhanito.com";
