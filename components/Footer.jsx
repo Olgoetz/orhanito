@@ -51,7 +51,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <Link href="/#top" scroll={true}>
+        <Link href="/" scroll={true}>
           <Image
             className="mx-auto mt-3"
             src="/logo_black.webp"

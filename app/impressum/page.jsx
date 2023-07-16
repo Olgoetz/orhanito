@@ -5,7 +5,7 @@ const Page = () => {
     <>
       <Navbar />
       <div
-        id="impressum"
+        name="impressum"
         className="py-[80px] text-justify container mx-auto px-2"
       >
         <h1 className="text-red-400 text-left uppercase my-4 font-bold text-3xl md:text-5xl">
