@@ -12,58 +12,60 @@ const Page = () => {
           Impressum
         </h1>
         <div className="mt-4 text-sm text-justify">
-          <p className="font-bold">Angaben gemäß § 5 TMG</p>
+          <p className="font-bold">Information according to § 5 TMG</p>
           <br />
           <p>Orhan Kayan</p>
           <p>Louise-schröder-weg 4, 40789 Monheim</p>
           <p>o.kayan@gmx.net</p>
           <br />
           <p>
-            <strong>Haftungsausschluss</strong>
+            <strong>Disclaimer</strong>
             <br />
-            Haftung für Inhalte Die Inhalte unserer Seiten wurden mit größter
-            Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
-            Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
-            auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
-            §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
-            verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
-            überwachen oder nach Umständen zu forschen, die auf eine
-            rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung
-            oder Sperrung der Nutzung von Informationen nach den allgemeinen
-            Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist
-            jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
-            Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
-            Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-            Haftung für Links Unser Angebot enthält Links zu externen Webseiten
-            Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können
-            wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die
-            Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder
-            Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden
-            zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht
-            erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten
-            Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung
-            nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir
-            derartige Links umgehend entfernen.
+            Liability for content The content of our pages was created with the
+            utmost care. For the correctness, completeness and and topicality of
+            the contents, however, we can not guarantee. As a service provider
+            we are responsible for our own contents according to § 7 Abs.1 TMG.
+            for own contents on these pages according to the general laws.
+            According to §§ 8 to 10 TMG, however, we are not obligated as a
+            service provider to monitor transmitted or stored information from
+            third parties or to investigate or to investigate circumstances that
+            indicate illegal activity. illegal activity. Obligations to remove
+            or blocking the use of information in accordance with general laws
+            remain unaffected. A liability in this respect is only possible from
+            the time of knowledge of a concrete infringement. infringement is
+            possible. If we become aware of any such infringement infringements,
+            we will remove this content immediately. Liability for links mine
+            offer contains links to external websites of third third parties, on
+            whose contents we have no influence. Therefore we can therefore we
+            cannot assume any liability for these external contents. For the
+            contents of the linked pages is always the respective provider or
+            operator operator of the pages is responsible. The linked pages were
+            checked for possible legal violations at the time of linking.
+            Illegal contents were not recognizable at the time of linking.
+            recognizable at the time of linking. A permanent control of the
+            contents of the linked pages is linked pages is not reasonable
+            without concrete evidence of an infringement. not reasonable. If we
+            become aware of any infringements of the law, we will immediately
+            remove remove such links immediately.
           </p>
           <br />
           <p>
-            <strong>Urheberrecht</strong>
+            <strong>Copyright</strong>
             <br />
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-            diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-            Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-            Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-            schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-            Downloads und Kopien dieser Seite sind nur für den privaten, nicht
-            kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser
-            Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
-            Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
-            gekennzeichnet. Sollten Sie trotzdem auf eine
-            Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-            entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-            werden wir derartige Inhalte umgehend entfernen.
+            The content and works on these pages created by the site operators
+            are on these pages are subject to German copyright law. The
+            duplication, processing, distribution, or any form of
+            commercialization use outside the limits of copyright law requires
+            the written consent of the written consent of the respective author
+            or creator. Downloads and copies of these pages are only permitted
+            for private, non-commercial use. commercial use. As far as the
+            contents on this not created by the operator, the copyrights of
+            third parties are respected. copyrights of third parties. In
+            particular, third-party content is identified as such. marked as
+            such. Should you nevertheless become aware of a copyright
+            infringement, we ask for an appropriate notice. appropriate notice.
+            If we become aware of any infringements of the law we will remove
+            such content immediately.
           </p>
           <br />
         </div>

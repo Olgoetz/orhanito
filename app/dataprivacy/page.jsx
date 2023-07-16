@@ -191,11 +191,8 @@ const Page = () => {
         </p>
 
         <p>Orhan Kayan</p>
-        <p>xxxx</p>
-        <p>xx Cologne</p>
-        <p>Germany</p>
-        <p>Phone: 00491601824227</p>
-        <p>Email: info@djorhanito.com</p>
+        <p>Louise-schröder-weg 4, 40789 Monheim, Germany</p>
+        <p>o.kayan@gmx.net</p>
         <p>Website: www.djorhanito.com</p>
 
         <h4 className="font-bold my-4">
