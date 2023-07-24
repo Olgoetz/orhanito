@@ -197,7 +197,9 @@ const Page = () => {
           </p>
 
           <p>Orhan Kayan</p>
-          <p>Louise-schröder-weg 4, 40789 Monheim, Germany</p>
+          <p>c/o Tanzschule Tanzraum</p>
+          <p>Salierring 33</p>
+          <p>50677 Cologne</p>
           <p>o.kayan@gmx.net</p>
           <p>Website: www.djorhanito.com</p>
 

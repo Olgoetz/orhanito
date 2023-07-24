@@ -15,7 +15,9 @@ const Page = () => {
           <p className="font-bold">Information according to § 5 TMG</p>
           <br />
           <p>Orhan Kayan</p>
-          <p>Louise-schröder-weg 4, 40789 Monheim</p>
+          <p>c/o Tanzschule Tanzraum</p>
+          <p>Salierring 33</p>
+          <p>50677 Cologne</p>
           <p>o.kayan@gmx.net</p>
           <br />
           <p>

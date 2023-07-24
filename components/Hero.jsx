@@ -26,10 +26,10 @@ function Hero() {
           width={250}
           height={100}
         />
-        <p className="mt-10 text-2xl font-bold">
+        <h1 className="mt-10 text-2xl font-bold">
           <ImHeadphones size={30} className="text-white inline-block mr-2" />{" "}
           Passionate Bachata DJ
-        </p>
+        </h1>
         <a href="#bookings">
           <button className="bg-red-500 text-black p-3 rounded-md w-full mt-10 mx-auto">
             Book Me!
