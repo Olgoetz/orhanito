@@ -6,6 +6,7 @@ import { useFormspark } from "@formspark/use-formspark";
 import { ClockLoader } from "react-spinners";
 import * as z from "zod";
 import { useState } from "react";
+import Link from "next/link";
 
 const validationSchema = z.object({
   email: z
@@ -128,6 +129,13 @@ const Bookings = () => {
               {hasSent !== ""
                 ? buildMessage(hasSent.style, hasSent.message)
                 : ""}
+              <p className="text-white">
+                By sending a message through this form you agree to the{" "}
+                <Link className="text-red-500" href="/dataprivacy#dataprivacy">
+                  data privacy statement
+                </Link>
+                .
+              </p>
             </form>
           </div>
         </div>
